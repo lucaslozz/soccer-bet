@@ -1,14 +1,7 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Form, Button } from 'react-bootstrap';
 
 const Sign = () => {
-  const selectedBody = document.body.classList.add(
-    'd-flex',
-    'align-items-center',
-    'justify-content-center',
-    'min-vh-100',
-  );
   return (
     <Container className="d-flex ">
       <Form className="text-center " style={{ width: '330px' }}>
@@ -20,6 +13,9 @@ const Sign = () => {
         />
         <h1 className="mb-3 fs-3 fw-normal">Sign in</h1>
         <Form.Group controlId="sign-in-email-address">
+          <Form.Label className="fs-5 d-flex justify-content-start">
+            Email address
+          </Form.Label>
           <Form.Control
             type="email"
             size="lg"
@@ -29,6 +25,9 @@ const Sign = () => {
           />
         </Form.Group>
         <Form.Group controlId="sign-in-password">
+          <Form.Label className="fs-5 d-flex justify-content-start">
+            Password
+          </Form.Label>
           <Form.Control
             type="password"
             size="lg"
