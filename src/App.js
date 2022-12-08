@@ -1,10 +1,10 @@
 import React from 'react';
+import Sign from './tela-login/Sign';
 
 const App = () => {
   return (
     <div>
-      <h1>Projeto SoccerBet</h1>
-      <button>Login</button>
+      <Sign />
     </div>
   );
 };
